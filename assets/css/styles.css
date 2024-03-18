@@ -42,6 +42,7 @@ p {
     max-width: 75ch;
     margin-bottom: 2rem;
     line-height: 1.5rem;
+    color: hsl(234, 29%, 20%);
 }
 
 img,
@@ -74,48 +75,83 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 3em 2em; 
+    padding: 1em 2em; 
+    min-width: 60vw;
     border-radius: 20px;
 }
 
-/* inside styling */
+/* inside container styling */
+.textContainer {
+    margin-right: 1em
+}
+
 .textContainer h1 {
     font-size: 3rem;
     font-weight: 700;
     color: var(--DarkSlateGrey);
     letter-spacing: 3px;
     margin-bottom: var(--standardSpacing);
+    margin-top: 2rem;
 }
 
-.textContainer p {
-    color: var(--CharcoalGrey);
+.list p {
+    margin-left: var(--largeSpacing);
 }
 
+.list {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
 
+.list img {
+    margin-right: 1rem;
+    position: absolute;
+}
 
+.imgRight img {
+    width: 25vw;
+}
 
-/* # Front-end Style Guide
+/* form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    margin-right: 2em;
+    margin-bottom: 2rem;
+}
 
-## Colors
+input[type='email'] {
+    border: .5px solid hsl(231, 7%, 60%);
+    padding: .8rem 2rem;
+    border-radius: 5px;
+}
 
-### Primary
+.emailSubmit label {
+    font-size: .8rem;
+    font-weight: 700;
+}
 
-- Tomato: hsl(4, 100%, 67%)
+.submitBtn {
+    padding: 1em;
+    color: white;
+    font-weight: 700;
+    background-color: var(--DarkSlateGrey);
+    border-radius: 10px;
+    border: unset;
+    transition: .3s ease-in;
+}
 
-### Neutral
+.submitBtn:hover {
+    box-shadow: 0 10px 20px #ff195e94;
+    background-image: linear-gradient(to right, rgba(255, 0, 106, 0.932),rgb(253, 147, 48));
+    transform: scale(105%);
+}
 
-- Dark Slate Grey: hsl(234, 29%, 20%)
-- Charcoal Grey: hsl(235, 18%, 26%)
-- Grey: hsl(231, 7%, 60%)
-- White: hsl(0, 0%, 100%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 16px
-
-### Font
-
-- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
-- Weights: 400, 700 */
+::placeholder {
+    position: absolute;
+    left: 0;
+    margin-left: 5px;
+}
