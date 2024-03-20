@@ -156,3 +156,34 @@ input[type='email'] {
     left: 0;
     margin-left: 5px;
 }
+
+.invalidMail {
+    border: none;
+    background-color: rgba(253, 119, 119, 0.274);
+    color: rgb(255, 13, 13);
+    padding: .8rem 2rem;
+    border-radius: 5px;
+}
+
+.valid {
+    border: none;
+    background-color: rgba(138, 248, 156, 0.582);
+    color: rgb(7, 7, 7);
+    padding: .8rem 2rem;
+    border-radius: 5px;
+}
+
+/* success page */
+.containerSuccess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 3em 5em; 
+    width: 40vw;
+    border-radius: 20px;
+}
