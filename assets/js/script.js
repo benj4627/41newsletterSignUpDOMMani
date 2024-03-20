@@ -1,5 +1,4 @@
 //fanger de relevante elementer. 
-let form = document.getElementById('email-form');
 let inputEl = document.querySelector("input[type='email']");
 let paraEl = document.querySelector('.successMessage');
 
